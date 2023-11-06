@@ -2,14 +2,20 @@ import logo from "./logo.svg";
 import "./App.css";
 import Home from "./home";
 import Video from "./Video";
+// npm i react-router-dom@6.17.0
+
+// npm i bootstrap@5.3.2
+// import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/js/bootstrap.js";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      {/* My React App
-      <Home></Home> */}
+      {/* My react app
+      <Home/> */}
+
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
