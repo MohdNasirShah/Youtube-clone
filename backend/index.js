@@ -5,7 +5,8 @@ const videoRouter = require("./routes/videoRouter");
 const app = express();
 app.use(express.json());
 
-const DBURL = "mongodb://localhost:27017/youtubeclone";
+const DBURL =
+  "mongodb+srv://youtubeclone:1234@cluster0.5ofd4si.mongodb.net/youtubeclone_210240101057";
 
 mongoose
   .connect(DBURL)
