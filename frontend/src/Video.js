@@ -3,6 +3,9 @@
 import React, { useEffect, useState } from "react";
 import Header from "./header";
 import tmkoc from "./images/tmkoc.jpg";
+import avtar from "./images/avtar.png";
+import { LiaThumbsDown, LiaThumbsUp, LiaDownloadSolid } from "react-icons/lia";
+import { PiShareFatLight } from "react-icons/pi";
 
 function SuggestedVideo() {
   return (
@@ -20,6 +23,47 @@ function SuggestedVideo() {
             <p class="margin-0 smaller-fontsize">230M views . 4 years ago</p>
           </div>
         </div>
+      </div>
+    </>
+  );
+}
+
+function VideoInfo() {
+  return (
+    <>
+      <h5 className="video-title">
+        Kalank Title Track - Lyrical | Alia Bhatt , Varun Dhawan | Arijit Singh
+        | Pritam| Amitabh
+      </h5>
+      <div className="video-details">
+        <div className="channel-info">
+          <img src={avtar} height={"30px"} width={"30px"} />
+          <h6 className="channel-name">Zee Music Company</h6>
+          <button className="subscribe">Subscribe</button>
+        </div>
+        <div className="video-action-buttons">
+          <button>
+            <LiaThumbsUp size={"1.4rem"} />
+            597K | <LiaThumbsDown size={"1.4rem"} />
+          </button>
+          <button>
+            <PiShareFatLight size={"1.4rem"} />
+            Share
+          </button>
+          <button>
+            <LiaDownloadSolid size={"1.4rem"} />
+            Download
+          </button>
+        </div>
+      </div>
+      <div className="video-desc">
+        <p>434K views &nbsp; 1 year ago</p>
+        <p>
+          Here is the compilation video for all the random suggestions Shukla Ji
+          gave from the film Chhalaang. Watch this video for non stop laughter
+          and let us know in the comments which suggestion did you relate with
+          the most.
+        </p>
       </div>
     </>
   );
@@ -57,6 +101,7 @@ function Video() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
+          <VideoInfo />
         </div>
         <div className="suggestions">
           <p>Suggested Videos:</p>
