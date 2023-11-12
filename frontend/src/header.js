@@ -55,10 +55,13 @@ function Header() {
             <Link to={"/upload"}>
               <BiSolidVideoPlus class="upload" title="Upload video" />
             </Link>
-            <img src={profile} height={"40px"} width={"40px"}></img>
-            <p class="user-email margin-0">
-              {localStorage.getItem("userName")}
-            </p>
+            <div class="profile-div">
+              {" "}
+              <img src={profile} height={"40px"} width={"40px"}></img>
+              <p class="user-email margin-0">
+                {localStorage.getItem("userName")}
+              </p>
+            </div>
             <MdLogout
               class="logout"
               title="Logout"
